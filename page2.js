@@ -28,3 +28,27 @@ function notortalamasi(one,two,three)
 document.write(`<br>${dizi[3][0]} adlı öğrencinin yaşı : ${new Date().getFullYear() - dizi[3][2]}  ve not ortalaması : ${((dizi[3][3][0] + dizi[3][3][1] + dizi[3][3][2]) / 3).toFixed(1)}`);
 document.write(`<br>${dizi[4][0]} adlı öğrencinin yaşı : ${new Date().getFullYear() - dizi[4][2]}  ve not ortalaması : ${((dizi[4][3][0] + dizi[4][3][1] + dizi[4][3][2]) / 3).toFixed(1)}`);
 document.write(`<br>${dizi[5][0]} adlı öğrencinin yaşı : ${new Date().getFullYear() - dizi[5][2]}  ve not ortalaması : ${((dizi[5][3][0] + dizi[5][3][1] + dizi[5][3][2]) / 3).toFixed(1)}`);
+
+// yeni proje : 
+let sayilar = [1,5,7,15,3,25];
+
+//1- sayilar listesindeki her bir elemanın karesini yazdırınız.
+
+//2- sayılar listesindeki hangi sayılar 5'in katıdır?
+
+//3- sayılar listesindeki çift sayıların toplamını bulunuz.
+
+let urunler = ["iphone 12", "samsung s22", "iphone 13", "samsung s23"];
+
+//4- urunler listesindeki tüm ürünleri büyük harf ile yazdırınız.
+
+//5- urunler listesinde içinde samsung geçen kaç ürün vardır?
+
+let ogrenciler = [
+    {"Ad":"yiğit",  "Soyad":"bilgi",  "Notlar":[60,70,60]},
+    {"Ad":"ada",  "Soyad":"bilgi",  "Notlar":[80,70,80]},
+    {"Ad":"çınar",  "Soyad":"turan",  "Notlar":[70,70,60]},
+];
+// ogrenciler listesindeki her öğrencinin not ortalaması ve başarı durumlarını yazdırınız.
+
+// tüm öğrencilerin not ortalaması kaçtır?
