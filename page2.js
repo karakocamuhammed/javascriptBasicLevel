@@ -106,3 +106,16 @@ for(let i in notOrt_basariDrm)
 }
 genelOrt = (genelOrt / 3).toFixed(1);
 document.write("<br> tüm öğrencilerin not ortalaması : " +genelOrt);
+
+// yeni proje : --------------------------------------------------------------------------------------------------------------------------------------------
+document.write(" <br> yeni proje --------------------------------------------------");
+
+// 1- Kendisine gönderilen kelimeyi belirten kadar ekranda yazan fonksiyon yazınız.
+
+// 2- Dikdörtgenin alan ve çevresini hesaplayan fonksiyonu yazınız.
+
+// 3- Yazı tura uygulamasını fonksiyonu kullanarak yapınız.
+
+// 4- kendisine gönderilen bir sayının tam bölenlerini dizi şeklinde döndüren fonksiyonu yazınız.
+
+// 5- Değişken sayıda parametre alan toplam isminde bir fonksiyon tanımlayınız.
