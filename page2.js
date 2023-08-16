@@ -111,11 +111,74 @@ document.write("<br> tüm öğrencilerin not ortalaması : " +genelOrt);
 document.write(" <br> yeni proje --------------------------------------------------");
 
 // 1- Kendisine gönderilen kelimeyi belirten kadar ekranda yazan fonksiyon yazınız.
+function yaz(word, piece)
+{
+    for(let i = 1; i <= piece; i++)
+    {
+        document.write("<br>" +word);
+    }
+}
+yaz("marcus aurelius", 15);
 
-// 2- Dikdörtgenin alan ve çevresini hesaplayan fonksiyonu yazınız.
+// 2- Dikdörtgenin alan(kısa*uzun) ve çevresini((kısa+uzun)* 2) hesaplayan fonksiyonu yazınız.
+function hesapla(kısaKenar, uzunKenar)
+{
+    document.write("<br> dikdörtgenin alanı : "+ kısaKenar*uzunKenar + " birim kare " + " || çevresi ise : " + (kısaKenar+uzunKenar)*2 + "  birim");
+}
+hesapla(5, 15);
 
 // 3- Yazı tura uygulamasını fonksiyonu kullanarak yapınız.
+function sans( yazi_miTura_mi)
+{
+    var karar = 1;//Math.floor((Math.random() * 2));// 0 yada 1 gelebilir. sıfır == tura , 1 == yazı olsun
+    yazi_miTura_mi = yazi_miTura_mi.toLowerCase();
+    switch(karar)
+    {
+        case 0:
+            if(yazi_miTura_mi == "tura")
+                return "tebrikler bildiniz."
+            else if (yazi_miTura_mi == "yazı")
+                return "Ben kazandım siz yazı demişsiniz, tura geldi.."
+            else
+                return "lütfen sadece 'yazı' veya 'tura' kelimelerinden birini yazınz";
+        break;
+        case 1:
+            if(yazi_miTura_mi == "yazı")
+                return "tebrikler bildiniz."
+            else if (yazi_miTura_mi == "tura")
+                return "Ben kazandım siz tura demişsiniz, yazı geldi.."
+            else
+                return "lütfen sadece 'yazı' veya 'tura' kelimelerinden birini yazınz";
+        break;
+    }
+        
+}
+document.write("<br>" +sans("YaZİ"));
 
 // 4- kendisine gönderilen bir sayının tam bölenlerini dizi şeklinde döndüren fonksiyonu yazınız.
+function bulbolenleri(sayi)
+{
+    if(sayi <= 0)
+        return("0 ve 0 dan küçük bir sayı giremezssniz !!!");
+    var tam_bolenler = [1];
+    for(let i = 2; i <= sayi; i++)
+    {
+        if(sayi % i == 0)
+            tam_bolenler.push(i);
+    }
+    return tam_bolenler;
+}
+
+document.write("<br>" +bulbolenleri(3789));
 
 // 5- Değişken sayıda parametre alan toplam isminde bir fonksiyon tanımlayınız.
+function toplam()
+{
+    let top = 0;
+    for(let i = 0; i< arguments.length; i++)
+    {
+        top+= arguments[i];
+    }
+    return top;
+}
+document.write("<br>"+toplam(45,45,10,87));
